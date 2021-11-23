@@ -1,21 +1,27 @@
-Test.create(title: 'Ruby', level: 1)
-Test.create(title: 'PHP', level: 1)
-Test.create(title: 'Java', level: 2)
+Category.create([{title: 'Backend'},
+                 {title: 'frontend'},
+                 {title: 'full-stack'}])
 
-Question.create(title: 'Переменные', body: 'где хранятся переменные?')
-Question.create(title: 'Инстанст класса', body: 'как создается инстанс класса?')
-Question.create(title: 'Массивы', body: 'Какой метод используется для определения размера массива?')
+Test.create([{title: 'Ruby', level: 1, category_id: Category.first.id},
+             {title: 'Ruby', level: 2, category_id: Category.first.id},
+             {title: 'Ruby', level: 3, category_id: Category.second.id},
+             {title: 'PHP', level: 3, category_id: Category.last.id},
+             {title: 'PHP', level: 4, category_id: Category.last.id},
+             {title: 'Java', level: 4, category_id: Category.third.id},
+             {title: 'Java', level: 3},
+             {title: 'Java', level: 5},
+             {title: 'Python', level: 2}])
 
-Answer.create(title: 'В heap', correct: true)
-Answer.create(title: 'В stack', correct: false)
-Answer.create(title: 'на жестком диске', correct: false )
-Answer.create(title: 'методом new', correct: true)
-Answer.create(title: 'автоматически', correct: false )
-Answer.create(title: 'size', correct: true )
-Answer.create(title: 'first', correct: false )
+Question.create([{title: 'Переменные', body: 'где хранятся переменные?'},
+                 {title: 'Инстанст класса', body: 'как создается инстанс класса?'},
+                 {title: 'Массивы', body: 'Какой метод используется для определения размера массива?'}])
+
+Answer.create([{title: 'В heap', correct: true},
+               {title: 'В stack', correct: false},
+               {title: 'на жестком диске', correct: false},
+               {title: 'методом new', correct: true},
+               {title: 'автоматически', correct: false },
+               {title: 'size', correct: true},
+               {title: 'first', correct: false}])
 
 User.create(name: "Tom")
-
-Category.create(title: 'Backend')
-Category.create(title: 'frontend')
-Category.create(title: 'full-stack')
