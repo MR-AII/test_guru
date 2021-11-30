@@ -2,7 +2,8 @@ Category.create([{title: 'Backend'},
                  {title: 'frontend'},
                  {title: 'full-stack'}])
 
-user = User.create(name: "Tom")
+user = User.create({name: "Tom", email: 'tom@gmai.com'})
+User.create({name: 'John', email: 'john@gmail.com'})
 
 Test.create([{title: 'Ruby', level: 1, category_id: Category.first.id, user: user},
              {title: 'Ruby', level: 2, category_id: Category.first.id, user: user},
