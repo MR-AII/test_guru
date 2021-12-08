@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :tests
 
+  get '/tests/:category/:title', to: 'tests#search'
+
   # resource :account, controller: :account
   #
   # resources :tests, only: %i[index show]
