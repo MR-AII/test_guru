@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   resources :tests
 
+  resources :tests do
+    resources :questions, shallow: true
+  end
+
   get '/tests/:category/:title', to: 'tests#search'
 
   # resource :account, controller: :account
@@ -14,10 +18,6 @@ Rails.application.routes.draw do
   #   resources :questions
   # end
 
-  # resources :tests do
-  #   resources :questions, shallow: true
-  # end
-  #
   # GET /tests/beginner
   # POST /tests/1/start
 
