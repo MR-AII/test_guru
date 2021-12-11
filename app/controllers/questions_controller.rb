@@ -1,11 +1,16 @@
 class QuestionsController < ApplicationController
 
-  before_action :find_test
+  before_action :find_test, only: [:new, :create, :index]
+  rescue_from ActiveRecord::RecordNotFound, with: :question_not_found
 
   def index
-    all_questions = Question.all
+    all_questions = @test.questions
 
     render plain: all_questions.inspect
+  end
+
+  def new
+    @question = @test.questions.new
   end
 
   def show
@@ -14,7 +19,7 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    new_question = Question.create(question_params)
+    new_question = @test.questions.create(question_params)
 
     render plain: new_question.inspect
   end
@@ -32,6 +37,10 @@ class QuestionsController < ApplicationController
   end
 
   def find_test
-    @test = Test.find(params[:id])
+    @test = Test.find(params[:test_id])
+  end
+
+  def question_not_found
+    render plain: 'question not found'
   end
 end
