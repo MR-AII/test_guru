@@ -42,6 +42,16 @@ class TestsController < ApplicationController
     end
   end
 
+  def destroy
+    @test = Test.find(params[:id])
+
+    if @test.destroy
+      redirect_to tests_path
+    else
+      render :index
+    end
+  end
+
   def search
     result = ["Class: #{params.class}", "Parameters: #{params.inspect}"]
 
