@@ -1,0 +1,12 @@
+<p>
+  <strong>Title:</strong>
+  <%= @question.title %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @question.body %>
+</p>
+
+<%= link_to 'Edit', edit_question_path(@question) %>
+<%= link_to 'Back', test_path(@question) %>
