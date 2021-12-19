@@ -5,9 +5,9 @@ class Test < ApplicationRecord
   has_many :questions, dependent: :destroy
   belongs_to :user
 
-  validates :title, uniqueness: { scope: :level, message: 'There can be only one Test with the given name and level' }
+  validates :title, uniqueness: { scope: :level, message: 'There can be only one Test with the given name and level' }, presence: true
   validates :level, numericality: { only_integer: true, greater_than_or_equal_to: 0}
-  validate :validate_max_level, on: :create
+  validate :validate_max_level, on: [:create, :update]
 
   scope :difficult_levels, -> (level) { where("level = ?", level) }
   scope :easy, -> { where(level: (0..1)) }

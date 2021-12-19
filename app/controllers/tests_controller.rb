@@ -1,29 +1,51 @@
 class TestsController < ApplicationController
   # skip_after_action :find_test, only %i[show]
-  before_action :find_test, only: %i[show]
+  before_action :find_test, only: [:show, :edit, :update, :destroy]
   after_action :send_log_message
   around_action :log_execute_time
 
   rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_test_not_found
 
   def index
-    result = ["Class: #{params.class}", "Parameters: #{params.inspect}"]
-
-    render plain: result.join("\n")
+    @tests = Test.all
   end
 
   def show
-    render inline: '<%= @test.title %>'
+
   end
 
   def new
+    @test = Test.new
+  end
+
+  def edit
 
   end
 
   def create
-    test = Test.create(test_params)
+    @test = Test.new(test_params)
 
-    render plain: test.inspect
+    if @test.save
+      redirect_to @test
+    else
+      render :new
+    end
+  end
+
+  def update
+    if @test.update(test_params)
+      redirect_to @test
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    if @test.destroy
+      redirect_to tests_path
+    else
+      render :index
+    end
   end
 
   def search
@@ -55,6 +77,6 @@ class TestsController < ApplicationController
   end
 
   def test_params
-    params.require(:test).permit(:title, :level)
+    params.require(:test).permit(:title, :level, :category_id)
   end
 end
