@@ -12,6 +12,6 @@ module QuestionsHelper
   end
 
   def git_hub
-    'https://github.com/Psyker-h/test_guru'
+    link_to 'Psyker-h', "https://github.com/Psyker-h/test_guru", target: '_blank'
   end
 end
