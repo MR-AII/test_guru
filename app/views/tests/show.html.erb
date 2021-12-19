@@ -8,7 +8,7 @@
   <%= @test.level %>
 </p>
 
-<%= render 'questions/index' %><br><br>
+<%= render @test.questions %><br><br>
 
 <%= link_to 'Add new question', new_test_question_path(@test) %>
 

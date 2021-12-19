@@ -1,6 +1,4 @@
 
-  /* footer */
-
 footer {
   margin-top: 45px;
   padding-top: 5px;
@@ -28,4 +26,9 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+.my_custom_class {
+  background-color: #999999;
+  color: white;
 }
