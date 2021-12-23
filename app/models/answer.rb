@@ -4,11 +4,11 @@ class Answer < ApplicationRecord
   validates :title, presence: true, uniqueness: true
   validate :validate_answers_count, on: :create
 
-  scope :correct_answers, -> { where(correct: true) }
+  scope :correct, -> { where(correct: true) }
 
   private
 
   def validate_answers_count
-    errors.add(:question) if question.answers.count >= 1 && question.answers <= 4
+    errors.add(:question) if question.answers.count >= 4
   end
 end

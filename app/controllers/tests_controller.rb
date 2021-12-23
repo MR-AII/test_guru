@@ -1,6 +1,7 @@
 class TestsController < ApplicationController
   # skip_after_action :find_test, only %i[show]
-  before_action :find_test, only: [:show, :edit, :update, :destroy]
+  before_action :find_test, only: [:show, :edit, :update, :destroy, :start]
+  before_action :set_user, only: :start
   after_action :send_log_message
   around_action :log_execute_time
 
@@ -12,6 +13,18 @@ class TestsController < ApplicationController
 
   def show
 
+  end
+
+  def start
+    # binding.pry
+    @test_passage = TestPassage.new(user_id: @user.id, test_id: @test.id)
+    if @test_passage.save
+      redirect_to test_passage_path(@test_passage.id)
+    else
+      redirect_to tests_path
+    end
+    # @user.tests.push(@test)
+    # redirect_to @user.test_passage(@test)
   end
 
   def new
@@ -58,6 +71,12 @@ class TestsController < ApplicationController
 
   def find_test
     @test = Test.find(params[:id])
+  end
+
+  def set_user
+    @user = User.first
+
+    # @user = User.find(params[:id])
   end
 
   def send_log_message
