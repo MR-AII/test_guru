@@ -16,15 +16,12 @@ class TestsController < ApplicationController
   end
 
   def start
-    # binding.pry
     @test_passage = TestPassage.new(user_id: @user.id, test_id: @test.id)
     if @test_passage.save
       redirect_to test_passage_path(@test_passage.id)
     else
       redirect_to tests_path
     end
-    # @user.tests.push(@test)
-    # redirect_to @user.test_passage(@test)
   end
 
   def new
@@ -75,8 +72,6 @@ class TestsController < ApplicationController
 
   def set_user
     @user = User.first
-
-    # @user = User.find(params[:id])
   end
 
   def send_log_message

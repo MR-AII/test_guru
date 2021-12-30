@@ -24,7 +24,8 @@ class TestPassage < ApplicationRecord
   def successfully?
     if result_in_percentage >= 85
       true
-    elsif false
+    else
+      false
     end
   end
 
