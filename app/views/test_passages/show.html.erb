@@ -1,8 +1,9 @@
 <h1>Passing the <%= @test_passsage.test.title %> Test</h1>
 
-<b>
+<b> Вопрос № <%= @test_passsage.current_question_id %>
   <%= @test_passsage.current_question.body %>
 </b>
+<p1>Общее количество вопросов <%= @test_passsage.count_questions %></p1>
 
 <%= form_with url: test_passage_path(@test_passsage), local: true, method: :put do |form| %>
   <%= form.collection_check_boxes :answers_ids,
