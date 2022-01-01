@@ -1,5 +1,6 @@
 class TestsController < ApplicationController
   # skip_after_action :find_test, only %i[show]
+  before_action :authenticate_user!
   before_action :find_test, only: [:show, :edit, :update, :destroy, :start]
   before_action :set_user, only: :start
   after_action :send_log_message
