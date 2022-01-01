@@ -1,7 +1,7 @@
 class Test < ApplicationRecord
   belongs_to :category
-  has_many :passed_tests
-  has_many :users, through: :passed_tests
+  has_many :test_passages, dependent: :destroy
+  has_many :users, through: :test_passages
   has_many :questions, dependent: :destroy
   belongs_to :user
 
