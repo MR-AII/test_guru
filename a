@@ -1,0 +1,265 @@
+[33mcommit ad366cd07f791094bea08a18a469be1fdde64e37[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mlesson_10[m[33m)[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Sat Jan 1 20:34:47 2022 +0500
+
+    authenticate
+
+[33mcommit b0034be2b6f7528cdea3cb55a96fd56aa52f8737[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: 2b03939 11b246f
+Author: Timur Karimov <43674680+TimmyMT@users.noreply.github.com>
+Date:   Sat Jan 1 08:40:14 2022 +0500
+
+    Merge pull request #8 from Psyker-h/lesson_09
+    
+    #9 TestPassage model
+
+[33mcommit 11b246f9a7f9d012c0ed3c19f5a364d374ead622[m
+Author: BanForName <revan931@yandex.ru>
+Date:   Thu Dec 30 16:42:22 2021 +0500
+
+    HW_09 fix
+
+[33mcommit 4a2bdb14f1263b0e7e2a630e9573d587fbfca17a[m
+Author: BanForName <revan931@yandex.ru>
+Date:   Thu Dec 30 12:17:02 2021 +0500
+
+    HW_09
+
+[33mcommit 3506207701823fa920fe620420dde9e4056e2c85[m
+Author: BanForName <revan931@yandex.ru>
+Date:   Wed Dec 29 13:10:28 2021 +0500
+
+    task_09_02
+
+[33mcommit 810f6963b1d2d17c3b015da62dd86755055f690b[m
+Merge: 38e8849 2b03939
+Author: BanForName <revan931@yandex.ru>
+Date:   Wed Dec 29 07:50:19 2021 +0500
+
+    Merge branch 'master' of https://github.com/Psyker-h/test_guru into lesson_09
+
+[33mcommit 38e8849d4afd2901e2e7c3df8ec1cec825751198[m[33m ([m[1;31morigin/lesson_09[m[33m, [m[1;32mlesson_09[m[33m)[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Thu Dec 23 22:58:17 2021 +0500
+
+    callbacks, transaction
+
+[33mcommit 2b03939bc172698954e43ba0e1a2bcfa8d2692d5[m
+Merge: bd2a589 77d4d94
+Author: Ilshat Ablyuzin <57586598+Psyker-h@users.noreply.github.com>
+Date:   Sun Dec 19 00:39:08 2021 -0800
+
+    Merge pull request #7 from Psyker-h/lesson_08
+    
+    #8 Rails views
+
+[33mcommit 77d4d9455b5dc4f4e9c857a9d2644bb1b02b51d0[m[33m ([m[1;31morigin/lesson_08[m[33m, [m[1;32mlesson_08[m[33m)[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Sun Dec 19 13:37:41 2021 +0500
+
+    hot fixed v2.0
+
+[33mcommit 509f1356c4b1bd4419d0f130dca811afd970cd66[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Sun Dec 19 13:14:03 2021 +0500
+
+    hot fixed
+
+[33mcommit c3615a689b9083183e0e5d6e816d50e4be2ce9f1[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Sun Dec 19 03:20:38 2021 +0500
+
+    layots/partials
+
+[33mcommit b00f8e8cb4e96abdbe199c9af8a6c54798a64f2f[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Tue Dec 14 22:01:56 2021 +0500
+
+    rails helpers
+
+[33mcommit c385ded494ac3af7d441d39ea2840fed3fee445b[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Mon Dec 13 22:58:46 2021 +0500
+
+    add views files
+
+[33mcommit 6630688677560db3f26c3bc9d71878e526454b97[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Mon Dec 13 22:57:10 2021 +0500
+
+    added views files
+
+[33mcommit bd2a5890816334bdbe828038131314939ba923d6[m
+Merge: 2de63b4 ae14913
+Author: Ilshat Ablyuzin <57586598+Psyker-h@users.noreply.github.com>
+Date:   Sat Dec 11 08:54:14 2021 -0800
+
+    Merge pull request #6 from Psyker-h/lesson_07
+    
+    #07_controller, callbacks, routes
+
+[33mcommit ae14913b8cf2f20b3419480b81fa13be5798b801[m[33m ([m[1;31morigin/lesson_07[m[33m, [m[1;32mlesson_07[m[33m)[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Sat Dec 11 21:47:19 2021 +0500
+
+    HW_07: implement questions_controller, and callbacks
+
+[33mcommit 2cb67101a82e0b380f402a6908f0f074b5c6c93d[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Thu Dec 9 23:32:24 2021 +0500
+
+    HW_07
+
+[33mcommit 5cee9aa13ce3fbf5bad077194160c7ff0760c5b4[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Wed Dec 8 22:52:06 2021 +0500
+
+    parameters and callbacks
+
+[33mcommit e42c480aee50fca2b8708174911e7d1bb1436e71[m
+Author: BanForName <revan931@yandex.ru>
+Date:   Wed Dec 8 16:42:41 2021 +0500
+
+    test_contoller
+
+[33mcommit 370f613d7047a5ac49dba4335f174d1fbc8dfd67[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Mon Dec 6 20:41:21 2021 +0500
+
+    test_controller
+
+[33mcommit 8b6723a6a36675662d6cf3f9ac1884ec4813f2dc[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Tue Nov 30 23:41:22 2021 +0500
+
+    v_02 routes
+
+[33mcommit 2de63b41485a14836c063769a62c604a2e86883d[m
+Author: BanForName <revan931@yandex.ru>
+Date:   Tue Nov 30 12:51:33 2021 +0500
+
+    merge
+
+[33mcommit b3ad9a85733b0a48945ec1d3c126a2f8156c513a[m
+Merge: bc071ac 356efb2
+Author: BanForName <revan931@yandex.ru>
+Date:   Tue Nov 30 12:50:38 2021 +0500
+
+    Merge branch 'master' of https://github.com/Psyker-h/test_guru
+
+[33mcommit 356efb2cee0ef11ba3c325c058096763ecc10030[m
+Merge: c69190f 4e40aa2
+Author: Ilshat Ablyuzin <57586598+Psyker-h@users.noreply.github.com>
+Date:   Mon Nov 29 23:44:53 2021 -0800
+
+    Merge pull request #5 from Psyker-h/lesson_06
+    
+    #6 скоупы, валидации
+
+[33mcommit bc071ac063961b29ceb75398aacdb1eee0bdd95d[m
+Author: BanForName <revan931@yandex.ru>
+Date:   Tue Nov 30 12:41:17 2021 +0500
+
+    fixed
+
+[33mcommit 4e40aa27b99618631df0299c9ff5f3fb49491dba[m
+Author: BanForName <revan931@yandex.ru>
+Date:   Tue Nov 30 08:54:07 2021 +0500
+
+    add null constraint to column email
+
+[33mcommit b459ae6242550f6971dc655838083cd683043342[m[33m ([m[1;31morigin/lesson_06[m[33m)[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Mon Nov 29 23:16:12 2021 +0500
+
+    scopes and validates
+
+[33mcommit c69190fce2fbcfba99472d791ffef258117b7cc9[m
+Merge: 5ea934c d3ae18c
+Author: Ilshat Ablyuzin <57586598+Psyker-h@users.noreply.github.com>
+Date:   Thu Nov 25 09:28:22 2021 -0800
+
+    Merge pull request #4 from Psyker-h/lesson_05
+    
+    #5 ER диаграмма, ассоциации.
+
+[33mcommit d3ae18c865f1aed264191fecad9349c21b8b7b3f[m[33m ([m[1;31morigin/lesson_05[m[33m)[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Thu Nov 25 22:23:46 2021 +0500
+
+    added association to entities
+
+[33mcommit 5ea934cf73de2d5ce55bd93f709e8e4b9adabdbb[m
+Merge: 309103e 2fb5a30
+Author: Ilshat Ablyuzin <57586598+Psyker-h@users.noreply.github.com>
+Date:   Thu Nov 25 07:30:27 2021 -0800
+
+    Merge pull request #3 from Psyker-h/lesson_04
+    
+    #4 консоль запросов Active record query interface
+
+[33mcommit 2fb5a30fcdee8de808a29829a93282778bb0eef1[m[33m ([m[1;31morigin/lesson_04[m[33m)[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Tue Nov 23 10:23:40 2021 -0800
+
+    fixed
+
+[33mcommit 216edd0905f99f1c25ebe91caef4a715fce23bab[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Tue Nov 23 10:22:53 2021 -0800
+
+    fixed
+
+[33mcommit 906db8200dd86d33f50b21050425512baf61af34[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Sun Nov 21 10:36:33 2021 -0800
+
+    default value in seed.rb and implements class/instans methods in Test/User class
+
+[33mcommit 309103ef573170dd0f43622e9b317438270d2a02[m
+Merge: 3fdeefb b526521
+Author: Timur Karimov <43674680+TimmyMT@users.noreply.github.com>
+Date:   Sat Nov 20 18:02:03 2021 +0500
+
+    Merge pull request #2 from Psyker-h/lesson_03
+    
+    #3: Модели Rails, основы СУБД, Миграции
+
+[33mcommit b52652154e70565be942b466ede0dba14ee2bec6[m[33m ([m[1;31morigin/lesson_03[m[33m)[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Sat Nov 20 04:44:28 2021 -0800
+
+    add references to tables
+
+[33mcommit a03613b8b2e383ea7c98c6185923ea19fe6f144d[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Sat Nov 20 03:04:35 2021 -0800
+
+    create models and migrations
+
+[33mcommit 80d831b1443ab53d001f7d32ea0d2ec4ba3a3697[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Thu Nov 18 09:59:50 2021 -0800
+
+    create model test
+
+[33mcommit 3fdeefb5671a4f8d68d3ed37221a3cffa14c361a[m
+Merge: 8a07ad5 29f10e0
+Author: Timur Karimov <43674680+TimmyMT@users.noreply.github.com>
+Date:   Wed Nov 17 17:19:38 2021 +0500
+
+    Merge pull request #1 from Psyker-h/lesson_02
+    
+    #2 Инициализация rails приложения
+
+[33mcommit 29f10e0e9a528e9238b30a14a522c320d527eab4[m[33m ([m[1;31morigin/lesson_02[m[33m)[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Wed Nov 17 04:14:53 2021 -0800
+
+    adds info about author
+
+[33mcommit 8a07ad518435b4086760b7a97503485eeebfa38b[m
+Author: ilshat <revan931@yandex.ru>
+Date:   Wed Nov 17 03:52:33 2021 -0800
+
+    init
