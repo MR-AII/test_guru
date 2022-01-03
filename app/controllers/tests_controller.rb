@@ -1,5 +1,4 @@
 class TestsController < ApplicationController
-  # skip_after_action :find_test, only %i[show]
   before_action :authenticate_user!
   before_action :find_test, only: [:show, :edit, :update, :destroy, :start]
   before_action :set_user, only: :start
@@ -72,7 +71,7 @@ class TestsController < ApplicationController
   end
 
   def set_user
-    @user = User.first
+    @user = current_user
   end
 
   def send_log_message
