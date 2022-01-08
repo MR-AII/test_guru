@@ -1,6 +1,5 @@
-class Admin::TestsController < ApplicationController
-  before_action :authenticate_user!
-  before_action :find_test, only: [:show, :edit, :update, :destroy, :start]
+class Admin::TestsController < Admin::BaseController
+  before_action :find_test, only: [:show, :edit, :update, :destroy]
   after_action :send_log_message
   around_action :log_execute_time
 
@@ -11,7 +10,7 @@ class Admin::TestsController < ApplicationController
   end
 
   def show
-
+    @questions = @test.questions
   end
 
   def start
@@ -32,7 +31,7 @@ class Admin::TestsController < ApplicationController
     @test.user_id = current_user.id
 
     if @test.save
-      redirect_to @test
+      redirect_to [:admin, @test]
     else
       render :new
     end
@@ -40,7 +39,7 @@ class Admin::TestsController < ApplicationController
 
   def update
     if @test.update(test_params)
-      redirect_to @test
+      redirect_to [:admin, @test]
     else
       render :edit
     end
@@ -48,7 +47,7 @@ class Admin::TestsController < ApplicationController
 
   def destroy
     if @test.destroy
-      redirect_to tests_path
+      redirect_to [:admin, @test]
     else
       render :index
     end

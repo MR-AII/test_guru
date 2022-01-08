@@ -9,10 +9,10 @@
 </p>
 
 <ol>
-  <%= render partial: 'questions/question', collection: @test.questions %>
+  <%= render @questions %>
 </ol>
 
-<%= link_to 'Add new question', new_admin_test_path(@test) %>
+<%= link_to 'Add new question', new_admin_test_question_path(@test) %>
 
 <%= link_to 'Edit', edit_admin_test_path(@test) %>
 <%= link_to 'Back', admin_tests_path %>
