@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'sessions/new'
   get 'users/new'
 
-  resources :tests do
+  resources :tests, only: :index do
     # except: :index  исключение экшенов
     resources :questions, shallow: true, except: :index do
       resources :answers, shallow: true, except: :index
@@ -22,6 +22,10 @@ Rails.application.routes.draw do
     member do
       get :result
     end
+  end
+
+  namespace :admin do
+    resources :tests
   end
 
   get '/tests/:category/:title', to: 'tests#search'
