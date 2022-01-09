@@ -2,9 +2,7 @@
   <td><%= test.title %></td>
   <td><%= test_level(test) %></td>
   <td><%= test.questions.count %> </td>
-  <% if current_user.is_a?(Admin) %>
-    <td><%= current_user.first_name %></td>
-  <% end %>
+  <td><%= test.author.first_name %></td>
   <td><%= link_to 'Show', admin_test_path(test) %></td>
   <td><%= link_to 'Edit', edit_admin_test_path(test) %></td>
   <td><%= link_to 'Delete', admin_test_path(test),

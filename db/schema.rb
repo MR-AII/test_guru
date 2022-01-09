@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_08_111720) do
+ActiveRecord::Schema.define(version: 2022_01_09_163119) do
 
   create_table "answers", force: :cascade do |t|
     t.string "title", null: false
@@ -53,9 +53,8 @@ ActiveRecord::Schema.define(version: 2022_01_08_111720) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "category_id"
-    t.integer "user_id", null: false
+    t.integer "author_id"
     t.index ["category_id"], name: "index_tests_on_category_id"
-    t.index ["user_id"], name: "index_tests_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -88,5 +87,4 @@ ActiveRecord::Schema.define(version: 2022_01_08_111720) do
   add_foreign_key "test_passages", "tests"
   add_foreign_key "test_passages", "users"
   add_foreign_key "tests", "categories"
-  add_foreign_key "tests", "users"
 end
