@@ -1,6 +1,0 @@
-<% if  logged_in? %>
-  <p class="nav user">
-    Welcome, <b><%= current_user.name %><br> ID: <%= user_id %></b>
-    <%= link_to 'Logout', logout_path, method: :delete %>
-  </p>
-<% end %>

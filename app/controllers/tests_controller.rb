@@ -1,7 +1,6 @@
 class TestsController < ApplicationController
   before_action :authenticate_user!
-  before_action :find_test, only: [:show, :edit, :update, :destroy, :start]
-  before_action :set_user, only: :start
+  before_action :find_test, only: [:start]
   after_action :send_log_message
   around_action :log_execute_time
 
@@ -11,67 +10,15 @@ class TestsController < ApplicationController
     @tests = Test.all
   end
 
-  def show
-
-  end
-
   def start
-    @test_passage = TestPassage.new(user_id: @user.id, test_id: @test.id)
-    if @test_passage.save
-      redirect_to test_passage_path(@test_passage.id)
-    else
-      redirect_to tests_path
-    end
-  end
-
-  def new
-    @test = Test.new
-  end
-
-  def edit
-
-  end
-
-  def create
-    @test = Test.new(test_params)
-
-    if @test.save
-      redirect_to @test
-    else
-      render :new
-    end
-  end
-
-  def update
-    if @test.update(test_params)
-      redirect_to @test
-    else
-      render :edit
-    end
-  end
-
-  def destroy
-    if @test.destroy
-      redirect_to tests_path
-    else
-      render :index
-    end
-  end
-
-  def search
-    result = ["Class: #{params.class}", "Parameters: #{params.inspect}"]
-
-    render plain: result.join("\n")
+    current_user.tests.push(@test)
+    redirect_to current_user.test_passage(@test)
   end
 
   private
 
   def find_test
     @test = Test.find(params[:id])
-  end
-
-  def set_user
-    @user = current_user
   end
 
   def send_log_message
@@ -88,9 +35,5 @@ class TestsController < ApplicationController
 
   def rescue_with_test_not_found
     render plain: 'Test was not found'
-  end
-
-  def test_params
-    params.require(:test).permit(:title, :level, :category_id)
   end
 end

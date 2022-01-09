@@ -11,7 +11,14 @@
   </head>
 
   <body>
-    <%= render 'sessions/current_session' %>
+    <% if user_signed_in? %>
+      <p class="nav user">
+        Welcome, <b><%= current_user.email %><br> ID: <%= current_user.id %></b>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+      </p>
+    <% end %>
+
+    <%= render 'shared/flash' %>
 
     <%= yield %><br>
     <%= render 'layouts/footer' %>
