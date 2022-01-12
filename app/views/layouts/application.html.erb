@@ -12,9 +12,8 @@
 
   <body>
     <% if user_signed_in? %>
-      <p class="nav user">
-        Welcome, <b><%= current_user.email %><br> ID: <%= current_user.id %></b>
-        <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+      <p class="nav user"> <b><%= t('.welcome_header', current_user: current_user.first_name, current_user_id: current_user.id) %></b>
+        <%= link_to t('.log_out'), destroy_user_session_path, method: :delete %>
       </p>
     <% end %>
 

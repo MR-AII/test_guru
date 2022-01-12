@@ -1,0 +1,12 @@
+ru:
+  activrecord:
+    models:
+      test: "Тест"
+
+    attributes:
+      test:
+        title: "Название"
+
+    errors:
+      messages:
+        black: " не может быть пустым"
