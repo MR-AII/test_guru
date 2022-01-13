@@ -33,6 +33,9 @@ en:
   hello: "Hello world"
 
   helpers:
+    helpers:
+      select:
+        prompt: "Please select"
     submit:
       test:
         create: "Create test"
@@ -52,6 +55,8 @@ en:
     button:
       test:
         start: "Start test"
+    link:
+      back: "Back"
 
   shared:
     errors:
@@ -102,6 +107,14 @@ en:
     questions:
       show:
         title: "Title"
+        new_answer: "New answer"
+        answers: "Answers"
+    answers:
+      edit:
+        edit_answer: "Editing answer"
+      show:
+        question: "Question"
+        answer: "Answer"
   devise:
     registrations:
       new:

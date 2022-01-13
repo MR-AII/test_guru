@@ -1,13 +1,25 @@
 ru:
   hello: "Привет мир"
 
+  true: "Да"
+  false: "Нет"
+
   helpers:
+    helpers:
+      select:
+        prompt: "Пожалуйста выберите"
     submit:
       test:
         create: "Создать тест"
         update: "Обновить тест"
       test_passages:
         create: "Следующий"
+      question:
+        create: "Создать вопрос"
+        update: "Обновить вопрос"
+      answer:
+        create: "Создать ответ"
+        update: "Обновить ответ"
 
     button:
       test:
@@ -26,6 +38,12 @@ ru:
         last_name: "Фамилия"
         password: "Пароль"
         password_confirmation: "Подтверждение пароля"
+      answer:
+        title: "Описание"
+        correct: "Правильно"
+
+    link:
+      back: "Назад"
 
 
   shared:
@@ -80,6 +98,8 @@ ru:
     questions:
       show:
         title: "Название"
+        new_answer: "Новый ответ"
+        answers: "Вопросы"
 
   devise:
     registrations:
@@ -104,3 +124,4 @@ ru:
   users:
     sessions:
       create:
+        flash_greeting: "Привет, %{current_user}."

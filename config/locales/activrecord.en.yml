@@ -14,3 +14,10 @@ ru:
     registrations:
       new:
         sign_up: ""
+  admin:
+    answers:
+      edit:
+        edit_answer: "Редактирование ответа"
+      show:
+        question: "Вопрос"
+        answer: "Ответ"

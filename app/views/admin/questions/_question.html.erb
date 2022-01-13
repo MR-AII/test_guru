@@ -1,9 +1,9 @@
 <li>
   <%= question.title %>
   <%= question.body %>
-  <%= link_to 'Show', admin_question_path(question) %>
-  <%= link_to 'Edit' , edit_admin_question_path(question) %>
-  <%= link_to 'Delete', admin_question_path(question),
+  <%= link_to t('admin.tests.test.Show'), admin_question_path(question) %>
+  <%= link_to t('admin.tests.test.edit') , edit_admin_question_path(question) %>
+  <%= link_to t('admin.tests.test.delete'), admin_question_path(question),
               method: :delete,
               data: { confirm: 'Are you sure?' } %>
 </li>
