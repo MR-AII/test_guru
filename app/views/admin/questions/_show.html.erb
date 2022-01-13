@@ -9,10 +9,10 @@
     <strong>Body:</strong>
     <%= question.body %>
   </p>
-  <%= link_to 'Show', test_questions_path(@test, question) %>
-  <%= link_to 'Edit', edit_admin_answer_path(@test, question) %>
-  <%= link_to 'Delete', admin_test_questions_path(question),
+  <%= link_to t('admin.tests.test.Show'), test_questions_path(@test, question) %>
+  <%= link_to t('admin.tests.test.edit'), edit_admin_answer_path(@test, question) %>
+  <%= link_to t('admin.tests.test.delete'), admin_test_questions_path(question),
               method: :delete,
-              data: { confirm: 'Are you sure?' } %>
+              data: { confirm: t('admin.tests.test.confirm') } %>
 <% end %>
 </p>
