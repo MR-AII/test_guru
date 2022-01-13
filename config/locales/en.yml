@@ -31,3 +31,98 @@
 
 en:
   hello: "Hello world"
+
+  helpers:
+    submit:
+      test:
+        create: "Create test"
+        update: "Update test"
+      test_passages:
+        create: "Next"
+    label:
+      test:
+        title: "Title"
+        level: "Level"
+        category_id: "Category"
+    user:
+      first_name: "first name"
+      last_name: "last name"
+      password: "Password"
+      password_confirmation: "Password_confirmation"
+    button:
+      test:
+        start: "Start test"
+
+  shared:
+    errors:
+      header:
+        one: "%{count} error detected"
+        other: "%{count} errors detected"
+
+  test_mailer:
+    completed_test:
+      subject: "Вы успешно завершили тест на TestGuru!"
+
+  tests:
+    index:
+      header: "Trickly tests"
+      title: "Title"
+      level: "Level"
+      question_count: "Question count"
+      author: "Author by"
+
+  test_passages:
+    result:
+      result_success: "The %{title} Test was completed "
+      result_failed: "The %{title} test failed"
+      success_rate: "The success rate of passing the test is: %{rate}%"
+    show:
+      Back: "Back"
+
+  admin:
+    tests:
+      index:
+        header: "Trickly tests"
+        new_test: "New test"
+        action: "Actions"
+      create:
+        success: "Test was succesfully created"
+      test:
+        Show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+        confirm: "Are you sure?"
+      show:
+        add_new_question: "Add new question"
+      new:
+        new_question: "New question"
+        create_new_test: "Create new test"
+    nav:
+      admin_panel: "Admin panel"
+    questions:
+      show:
+        title: "Title"
+  devise:
+    registrations:
+      new:
+        sign_up: "sign up"
+        char_min: "characters minimum"
+        header: "Sign up"
+    sessions:
+      new:
+        log_in: "Log in"
+        header: "Log in"
+        remember_chk_box: "Remember me"
+    shared:
+      links:
+        forgot_password: "Forgot your password?"
+        conf_mail: "Didn't receive confirmation instructions?"
+  easy: "easy"
+  layouts:
+    application:
+      welcome_header: "Welcome, %{current_user} ID: %{current_user_id}"
+      log_out: "Log out"
+  users:
+    sessions:
+      create:
+        flash_greeting: "Hello, mr. %{current_user}"

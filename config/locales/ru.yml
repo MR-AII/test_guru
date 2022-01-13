@@ -1,0 +1,106 @@
+ru:
+  hello: "Привет мир"
+
+  helpers:
+    submit:
+      test:
+        create: "Создать тест"
+        update: "Обновить тест"
+      test_passages:
+        create: "Следующий"
+
+    button:
+      test:
+        start: "Начать тест"
+
+    label:
+      test:
+        title: "Название"
+        level: "Уровень"
+        category_id: "Категория"
+      question:
+        title: "Название"
+        body: "Описание"
+      user:
+        first_name: "Имя"
+        last_name: "Фамилия"
+        password: "Пароль"
+        password_confirmation: "Подтверждение пароля"
+
+
+  shared:
+    errors:
+      header:
+        few: "Обнаружено %{count} ошибки"
+        mane: "Обнаружено %{count} ошибок"
+        one: "Обнаружено %{count} ошибка"
+        other: "Обнаружено %{count} ошибки"
+
+  test_mailer:
+    completed_test:
+      subject: "You just completed the TestGuru test!"
+
+
+  tests:
+    index:
+      header: "Доступные для прохождения тесты"
+      title: "Название"
+      level: "Уровень"
+      question_count: "Количество вопросов"
+      author: "Автор"
+
+  test_passages:
+    result:
+      result_success: "Тест %{title} успешно завершен"
+      result_failed: "Тест %{title} не пройден"
+      success_rate: "Процент успеха прохождения теста составляет: %{rate}%"
+    show:
+      Back: "Назад"
+
+  admin:
+    tests:
+      index:
+        header: "Доступные тесты"
+        new_test: "Новый тест"
+        action: "Действия"
+      create:
+        success: "Тест успешно создан"
+      test:
+        Show: "Показать"
+        edit: "Редактировать"
+        delete: "Удалить"
+        confirm: "Вы уверены?"
+      show:
+        add_new_question: "Добавить новый вопрос"
+      new:
+        new_question: "Новый вопрос"
+        create_new_test: "Создать новый тест"
+    nav:
+      admin_panel: "Панель Администратора"
+    questions:
+      show:
+        title: "Название"
+
+  devise:
+    registrations:
+      new:
+        sign_up: "Регистрация"
+        char_min: "символов минимум"
+        header: "Регистрация"
+    sessions:
+      new:
+        log_in: "Войти"
+        header: "Войти"
+        remember_chk_box: "Запомнить меня"
+    shared:
+      links:
+        forgot_password: "Забыли свой пароль?"
+        conf_mail: "Не получили письмо подтверждения?"
+  easy: "легкий"
+  layouts:
+    application:
+      welcome_header: "Добро пожаловать, %{current_user} ID: %{current_user_id}"
+      log_out: "Выйти"
+  users:
+    sessions:
+      create:
