@@ -1,12 +1,19 @@
-<h1><%= t('tests.index.header') %></h1>
+<div class="row mt-4">
+  <h1><%= t('tests.index.header') %></h1>
 
-<table>
-  <tr>
-    <th><%= t('.title') %></th>
-    <th><%= t('.level') %></th>
-    <th><%= t('.question_count') %> </th>
-    <th><%= t('.author') %>:</th>
-  </tr>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th><%= t('.title') %></th>
+        <th><%= t('.level') %></th>
+        <th><%= t('.question_count') %> </th>
+        <th><%= t('.author') %>:</th>
+      </tr>
+    </thead>
 
-  <%= render @tests %>
-</table>
+    <tbody>
+      <%= render @tests %>
+    </tbody>
+  </table>
+</div>
+

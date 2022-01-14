@@ -1,23 +1,32 @@
-<h1>Passing the <%= @test_passsage.test.title %> Test</h1>
+<div class="container">
+  <div class="row mt-4">
+    <h1><%= t('.passing_test', test_passage_title: @test_passsage.test.title) %></h1>
 
-<b> Вопрос № <%= @test_passsage.current_question_id %>
-  <%= @test_passsage.current_question.body %>
-</b><br>
-<p1>Общее количество вопросов <%= @test_passsage.count_questions %></p1>
+    <div class="col-6 mt-4">
+      <b> Вопрос № <%= @test_passsage.current_question_id %> <%= @test_passsage.current_question.body %></b>
+    </div>
 
-<%= form_with url: test_passage_path(@test_passsage), local: true, method: :put do |form| %>
-  <%= form.collection_check_boxes :answers_ids,
-                                  @test_passsage.current_question.answers,
-                                  :id,
-                                  :title,
-                                  include_hidden: false do |b| %>
-    <p>
-      <%= b.check_box id: "answer_ids_#{b.object_id}" %>
-      <%= b.label %>
-    </p>
-  <% end %>
+    <div class="col-6 mt-4">
+      <p1><%= t('.total_question_count', question_count: @test_passsage.count_questions) %></p1>
+    </div>
 
-  <p><%= form.submit t('helpers.submit.test_passages.create') %></p>
-<% end %>
-<%= link_to t('.Back'), tests_path %>
+    <%= form_with url: test_passage_path(@test_passsage), local: true, method: :put do |form| %>
+      <%= form.collection_check_boxes :answers_ids,
+                                      @test_passsage.current_question.answers,
+                                      :id,
+                                      :title,
+                                      include_hidden: false do |b| %>
+          <p>
+            <%= b.check_box id: "answer_ids_#{b.object_id}" %>
+            <%= b.label class: 'form-check-label' %>
+          </p>
+      <% end %>
+
+      <p><%= form.submit t('helpers.submit.test_passages.create') %></p>
+    <% end %>
+    <%= link_to t('.Back'), tests_path %>
+  </div>
+</div>
+
+
 

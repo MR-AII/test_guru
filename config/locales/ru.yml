@@ -74,6 +74,8 @@ ru:
       success_rate: "Процент успеха прохождения теста составляет: %{rate}%"
     show:
       Back: "Назад"
+      passing_test: "Прохождение %{test_passage_title} теста"
+      total_question_count: "Общее количество вопросов %{question_count}"
 
   admin:
     tests:
@@ -109,8 +111,8 @@ ru:
         header: "Регистрация"
     sessions:
       new:
-        log_in: "Войти"
-        header: "Войти"
+        log_in: "Вход"
+        header: "Вход"
         remember_chk_box: "Запомнить меня"
     shared:
       links:

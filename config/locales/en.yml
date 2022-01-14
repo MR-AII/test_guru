@@ -83,6 +83,8 @@ en:
       success_rate: "The success rate of passing the test is: %{rate}%"
     show:
       Back: "Back"
+      passing_test: "Passing the %{test_passage_title} Test"
+      total_question_count: "Total number of questions%{question_count}"
 
   admin:
     tests:
