@@ -1,8 +1,8 @@
-<div class="nav nav-admin">
-  <span class="nav-admin title"><%= t('.admin_panel') %></span>
+<div class="navbar navbar-light bg-primary">
+  <span class="navbar-text text-light fs-3"><b><%= t('.admin_panel') %></b></span>
 
-  <div class="nav-admin user">
+  <div class="nav-admin user text-light">
     <%= t('layouts.application.welcome_header', current_user: current_user.email, current_user_id: current_user.id) %> |
-    <%= link_to t('layouts.application.log_out'), destroy_user_session_path, method: :delete %>
+    <%= link_to t('layouts.application.log_out'), destroy_user_session_path, method: :delete, class: 'text-light' %>
   </div>
 </div>
