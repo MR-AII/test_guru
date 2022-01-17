@@ -85,6 +85,8 @@ en:
       Back: "Back"
       passing_test: "Passing the %{test_passage_title} Test"
       total_question_count: "Total number of questions%{question_count}"
+    gist:
+      failed: "Gist not saved"
 
   admin:
     tests:
@@ -141,3 +143,4 @@ en:
     sessions:
       create:
         flash_greeting: "Hello, mr. %{current_user}"
+  uccess: "Gist saved successfully"

@@ -76,6 +76,8 @@ ru:
       Back: "Назад"
       passing_test: "Прохождение %{test_passage_title} теста"
       total_question_count: "Общее количество вопросов %{question_count}"
+    gist:
+      failed: "Gist не сохранен"
 
   admin:
     tests:
@@ -127,3 +129,4 @@ ru:
     sessions:
       create:
         flash_greeting: "Привет, %{current_user}."
+  uccess: "Gist успешно сохранен"

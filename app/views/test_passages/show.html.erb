@@ -22,6 +22,7 @@
           </p>
       <% end %>
 
+      <p><%= link_to 'Gist question', gist_test_passage_path(@test_passsage), method: :post %></p>
       <p><%= form.submit t('helpers.submit.test_passages.create') %></p>
     <% end %>
     <%= link_to t('.Back'), tests_path %>
