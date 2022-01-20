@@ -1,23 +1,20 @@
 class GitHubClient
-
-  ROOT_ENDPOINT = 'https://api.github.com'
-  ACCESS_TOKEN = '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'
+  ACCESS_TOKEN = nil
 
   def initialize
-    @http_client = setup_http_client
+    @client = Octokit::Client.new(:access_token => ACCESS_TOKEN)
+
   end
 
-  def create_gist(params)
-    @http_client.post('gists') do | request|
-      request.headers['Authorization'] = "token #{ACCESS_TOKEN}"
-      request.headers['Content-Type'] = 'application/json'
-      request.body = params.to_json
-    end
+  def create_gist(options)
+    @client.post'gists', options
   end
 
-  private
+  def gists(user = @client.user)
+    @client.get'gists'
+  end
 
-  def setup_http_client
-    Faraday.new(url: ROOT_ENDPOINT)
+  def delete_gist(gist_id)
+    @client.send(:boolean_from_response, :delete, "gists/#{gist_id}")
   end
 end

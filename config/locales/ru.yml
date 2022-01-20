@@ -85,6 +85,7 @@ ru:
         header: "Доступные тесты"
         new_test: "Новый тест"
         action: "Действия"
+        user: "Пользователь"
       create:
         success: "Тест успешно создан"
       test:
@@ -104,6 +105,11 @@ ru:
         title: "Название"
         new_answer: "Новый ответ"
         answers: "Вопросы"
+    gists:
+      index:
+        questions: "Вопрос"
+        gist_url: "ссылка"
+        user: "Пользователь"
 
   devise:
     registrations:
@@ -129,4 +135,5 @@ ru:
     sessions:
       create:
         flash_greeting: "Привет, %{current_user}."
-  uccess: "Gist успешно сохранен"
+  success: "Gist %{gist_url} успешно сохранен"
+  gist_description: "Вопрос по %{test_title} от Тест Гуру"

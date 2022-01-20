@@ -94,6 +94,10 @@ en:
         header: "Trickly tests"
         new_test: "New test"
         action: "Actions"
+        gists: "Gists"
+        question: "Question"
+        gist_url: "url"
+        user: "User"
       create:
         success: "Test was succesfully created"
       test:
@@ -119,6 +123,12 @@ en:
       show:
         question: "Question"
         answer: "Answer"
+    gists:
+      index:
+        question: "Gist"
+        questions: "Questions"
+        gist_url: "url"
+        user: "User"
   devise:
     registrations:
       new:
@@ -143,4 +153,5 @@ en:
     sessions:
       create:
         flash_greeting: "Hello, mr. %{current_user}"
-  uccess: "Gist saved successfully"
+  success: "Gist %{gist_url} saved successfully"
+  gist_description: "A question about %{test_title} from TestGuru"

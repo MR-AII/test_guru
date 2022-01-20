@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'gists/index'
+  get 'admin/gists/fill'
+  # delete 'admin/gists/delete_all'
   root to: 'tests#index'
 
   devise_for :users, path: :gurus, path_names: { sign_in: :login, sign_out: :logout }, controllers: { sessions: 'users/sessions' }
@@ -29,6 +32,13 @@ Rails.application.routes.draw do
     resources :tests do
       resources :questions, shallow: true, except: :index do
         resources :answers, shallow: true, except: :index
+      end
+    end
+
+    resources :gists, only: %i[index destroy destroy_all] do
+      member do
+        get :destroy
+        get :delete_all
       end
     end
   end

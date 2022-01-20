@@ -16,10 +16,10 @@
                                       :id,
                                       :title,
                                       include_hidden: false do |b| %>
-          <p>
-            <%= b.check_box id: "answer_ids_#{b.object_id}" %>
-            <%= b.label class: 'form-check-label' %>
-          </p>
+        <p>
+          <%= b.check_box id: "answer_ids_#{b.object_id}" %>
+          <%= b.label class: 'form-check-label' %>
+        </p>
       <% end %>
 
       <p><%= link_to 'Gist question', gist_test_passage_path(@test_passsage), method: :post %></p>
