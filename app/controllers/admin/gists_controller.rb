@@ -6,36 +6,21 @@ class Admin::GistsController < ApplicationController
   end
 
   def fill
-    @git_gists = GistQuestionService.new.get_all_gists
-
-    @git_gists.each do |g|
-      if current_user.gists.find_by(gist_id: g.id)
-        flash[:alert] = "#{g.html_url} already uploaded"
-      else
-        current_user.gists.create!(question_id: 1,
-                    gist_url: g.html_url,
-                    gist_id: g.id)
-        flash[:notice] = "Gists uploaded!"
-      end
-    end
+    @git_gists = Gists::Collection.call
+    Gists::SaveGists.call({ collection_gists: @git_gists, current_user: current_user })
 
     redirect_to admin_gists_path
   end
 
   def destroy
-    @git_gist = GistQuestionService.new.delete_gist(@gist.gist_id)
-    @gist.destroy
+    Gists::Destroy.call([@gist])
     flash[:notice] = "#{@gist.gist_url} удален"
 
     redirect_to admin_gists_path
   end
 
   def delete_all
-    Gist.all.each do |gist|
-      GistQuestionService.new.delete_gist(gist.gist_id)
-      gist.delete
-    end
-
+    Gists::Destroy.call(Gist.all)
     flash[:notice] = "All gists deleted!"
 
     redirect_to admin_gists_path

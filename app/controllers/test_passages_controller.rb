@@ -23,7 +23,7 @@ class TestPassagesController < ApplicationController
   end
 
   def gist
-    @gist_question = GistQuestionService.new(@test_passsage.current_question).call
+    @gist_question = Gists::Create.new(@test_passsage.current_question).call
 
     flash_options = if @gist_question
                       created_gist!
