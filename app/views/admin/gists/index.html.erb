@@ -1,0 +1,25 @@
+<div class="row mt-2">
+  <h1 class="mt-2"><%= t('.gists') %></h1>
+  <h3> Gist counts: <%= @gists.count %></h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th><%= t('.questions') %></th>
+        <th><%= t('.gist_url') %></th>
+        <th><%= t('.user') %></th>
+        <th><%= t('admin.tests.index.action') %></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= render @gists %>
+    </tbody>
+  </table>
+
+  <p>
+    <%= link_to t('test_passages.show.Back'), admin_tests_path %> |
+    <%= link_to "Заполнить", admin_gists_fill_path %> |
+    <%= link_to "Удалить все", delete_all_admin_gist_path(@gists) %>
+  </p>
+
+</div>

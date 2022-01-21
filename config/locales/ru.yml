@@ -76,6 +76,8 @@ ru:
       Back: "Назад"
       passing_test: "Прохождение %{test_passage_title} теста"
       total_question_count: "Общее количество вопросов %{question_count}"
+    gist:
+      failed: "Gist не сохранен"
 
   admin:
     tests:
@@ -83,6 +85,7 @@ ru:
         header: "Доступные тесты"
         new_test: "Новый тест"
         action: "Действия"
+        user: "Пользователь"
       create:
         success: "Тест успешно создан"
       test:
@@ -102,6 +105,11 @@ ru:
         title: "Название"
         new_answer: "Новый ответ"
         answers: "Вопросы"
+    gists:
+      index:
+        questions: "Вопрос"
+        gist_url: "ссылка"
+        user: "Пользователь"
 
   devise:
     registrations:
@@ -127,3 +135,5 @@ ru:
     sessions:
       create:
         flash_greeting: "Привет, %{current_user}."
+  success: "Gist %{gist_url} успешно сохранен"
+  gist_description: "Вопрос по %{test_title} от Тест Гуру"
