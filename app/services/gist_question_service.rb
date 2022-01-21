@@ -12,7 +12,7 @@ class GistQuestionService
   end
 
   def get_all_gists
-    @client.gists('Psyker-h')
+    @client.gists()
   end
 
   def delete_gist(gist_id)
