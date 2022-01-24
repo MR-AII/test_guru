@@ -9,7 +9,11 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th><%= t('tests.index.title') %></th>
+        <th class="sort-by-title pointer">
+          <%= t('tests.index.title')  %>
+          <%= octicon 'arrow-up', class: 'text-success hide' %>
+          <%= octicon 'arrow-down', class: 'text-success hide' %>
+        </th>
         <th><%= t('tests.index.level') %></th>
         <th><%= t('tests.index.question_count') %></th>
         <th><%= t('tests.index.author') %>:</th>

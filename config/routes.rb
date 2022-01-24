@@ -24,7 +24,7 @@ Rails.application.routes.draw do
       get :result
 
       # опять post как get посылает
-      get :gist
+      post :gist
     end
   end
 
@@ -37,7 +37,7 @@ Rails.application.routes.draw do
 
     resources :gists, only: %i[index destroy destroy_all] do
       member do
-        get :destroy
+        delete :destroy
         get :delete_all
       end
     end
