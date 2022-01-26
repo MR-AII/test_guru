@@ -12,3 +12,4 @@ import "popper.js"
 import 'bootstrap'
 import "../packs/utilities/sorting"
 import "../packs/utilities/coincidence_pass"
+import "../packs/utilities/form_inline"
