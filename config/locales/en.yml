@@ -85,6 +85,7 @@ en:
       Back: "Back"
       passing_test: "Passing the %{test_passage_title} Test"
       total_question_count: "Total number of questions%{question_count}"
+      question_number: "question №"
     gist:
       failed: "Gist not saved"
 
@@ -110,6 +111,10 @@ en:
       new:
         new_question: "New question"
         create_new_test: "Create new test"
+      form:
+        submit: "submit"
+      form_inline:
+        submit: "Ok"
     nav:
       admin_panel: "Admin panel"
     questions:

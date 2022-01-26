@@ -76,6 +76,7 @@ ru:
       Back: "Назад"
       passing_test: "Прохождение %{test_passage_title} теста"
       total_question_count: "Общее количество вопросов %{question_count}"
+      question_number: "Вопрос №"
     gist:
       failed: "Gist не сохранен"
 
@@ -98,6 +99,10 @@ ru:
       new:
         new_question: "Новый вопрос"
         create_new_test: "Создать новый тест"
+      form:
+        submit: "Ок"
+      form_inline:
+        submit: "Ок"
     nav:
       admin_panel: "Панель Администратора"
     questions:

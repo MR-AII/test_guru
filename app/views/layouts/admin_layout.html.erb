@@ -13,15 +13,15 @@
     </head>
 
     <body>
+    <div class="container">
       <%= render 'admin/nav' %>
 
-      <div class="container">
-        <%= render 'shared/flash' %>
-        <%= yield %>
-      </div>
+      <%= render 'shared/flash' %>
+      <%= yield %>
+    </div>
 
-      <body class="d-flex flex-column min-vh-100">
-        <%= render 'layouts/footer' %>
-      </body>
+    <body class="d-flex flex-column min-vh-100">
+      <%= render 'layouts/footer' %>
+    </body>
     </body>
 </html>
