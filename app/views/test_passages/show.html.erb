@@ -1,15 +1,17 @@
-<div class="container">
-  <div class="row mt-4">
-    <h1><%= t('.passing_test', test_passage_title: @test_passsage.test.title) %></h1>
-
-    <div class="col-6 mt-4">
-      <b> Вопрос № <%= @test_passsage.current_question_id %> <%= @test_passsage.current_question.body %></b>
+<div class="row mt-4">
+  <h1><%= t('.passing_test', test_passage_title: @test_passsage.test.title) %></h1>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+      <%= @test_passsage.result_in_percentage %>%
+      <%= content_tag :div,
+                      class: 'progress-bar',
+                      data: { question_number: @test_passsage.current_question_id,
+                              questions_count: @test_passsage.count_questions } do %>
+      <% end %>
     </div>
+  </div>
 
-    <div class="col-6 mt-4">
-      <p1><%= t('.total_question_count', question_count: @test_passsage.count_questions) %></p1>
-    </div>
-
+  <div class="mt-4">
     <%= form_with url: test_passage_path(@test_passsage), local: true, method: :put do |form| %>
       <%= form.collection_check_boxes :answers_ids,
                                       @test_passsage.current_question.answers,
