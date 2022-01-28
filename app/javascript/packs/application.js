@@ -8,7 +8,7 @@ Turbolinks.start()
 ActiveStorage.start()
 
 import "jquery"
-import "popper.js"
+import "@popperjs/core"
 import 'bootstrap'
 import "../packs/utilities/sorting"
 import "../packs/utilities/coincidence_pass"
