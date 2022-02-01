@@ -69,7 +69,6 @@ Rails.application.configure do
     ssl: true,
     address: 'smtp.yandex.ru',
     port: 465,
-    domain: 'yandex.ru',
     authentication: 'plain',
     user_name: ENV['SMTP_USERNAME'],
     password: ENV['SMTP_PASSWORD'],
