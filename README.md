@@ -2,7 +2,7 @@
 
 Ruby 2.7.1 | Rails 6.1.4
 
-**Модели**: Тесты |
-        Вопросы |
-        Ответы |
-        Пользователи |
+**Модели**: [Тесты](https://github.com/MR-AII/test_guru/blob/master/app/models/test.rb) |
+        [Вопросы](https://github.com/MR-AII/test_guru/blob/master/app/models/question.rb) |
+        [Ответы](https://github.com/MR-AII/test_guru/blob/master/app/models/answer.rb) |
+        [Пользователи](https://github.com/MR-AII/test_guru/blob/master/app/models/user.rb) |
