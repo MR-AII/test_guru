@@ -12,4 +12,4 @@ Ruby 2.7.1 | Rails 6.1.4
 
 **Миграции:** `rails db:migrate`
 
-**Комманда для запуска Кails:** `rails s`
+**Комманда для запуска Rails:** `rails s`
