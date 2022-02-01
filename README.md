@@ -6,3 +6,10 @@ Ruby 2.7.1 | Rails 6.1.4
         [Вопросы](https://github.com/MR-AII/test_guru/blob/master/app/models/question.rb) |
         [Ответы](https://github.com/MR-AII/test_guru/blob/master/app/models/answer.rb) |
         [Пользователи](https://github.com/MR-AII/test_guru/blob/master/app/models/user.rb) |
+
+
+**Клонирование проекта:** `https://github.com/MR-AII/test_guru.git`
+
+**Миграции:** `rails db:migrate`
+
+**Комманда для запуска Кails:** `rails s`
