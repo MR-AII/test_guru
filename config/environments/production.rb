@@ -66,12 +66,14 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'gentle-beyond-17907.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:          'smtp.gmail.com',
+    address:          'smtp.yandex.ru',
     port:             587,
+    domain:           'yandex.ru',
+    authentication:   'plain',
     user_name:        ENV['SMTP_USERNAME'],
     password:         ENV['SMTP_PASSWORD'],
-    authentication:   'plain',
-    enable_starttls_auto: true }
+    enable_starttls_auto: true,
+    tls:              true }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
