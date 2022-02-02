@@ -149,6 +149,10 @@ en:
       links:
         forgot_password: "Forgot your password?"
         conf_mail: "Didn't receive confirmation instructions?"
+    confirmations:
+      new:
+        resend_confirmation: "Resend confirmation instructions"
+        resend_instruction: "Resend confirmation instructions"
   easy: "easy"
   layouts:
     application:

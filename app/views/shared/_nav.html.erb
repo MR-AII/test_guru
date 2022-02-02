@@ -1,13 +1,20 @@
 <nav class="navbar navbar-light bg-light">
-  <b><%= link_to 'Test Guru', root_path, class: 'navbar-brand' %></b>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <h2>
+      <%= image_tag "test.png", class: "d-inline-block align-text-top", style: "height:35px"%>
+        Guru
+      </h2>
+    </a>
 
-  <span class="navbar-text">
+    <span class="navbar-text">
     <% if user_signed_in? %>
       <b><%= t('layouts.application.welcome_header', current_user: current_user.first_name, current_user_id: current_user.id) %> |</b>
-      <%= link_to t('layouts.application.log_out'), destroy_user_session_path, method: :delete %>
+        <%= link_to t('layouts.application.log_out'), destroy_user_session_path, method: :delete, class: 'link-primary' %>
     <% else %>
-      <%= link_to t('devise.sessions.new.log_in'), new_session_path(resource_name) %> |
-      <%= link_to t('devise.registrations.new.sign_up'), new_registration_path(resource_name) %>
+      <%= link_to t('devise.sessions.new.log_in'), new_session_path(resource_name), class: 'btn btn-outline-secondary' %>
+        <%= link_to t('devise.registrations.new.sign_up'), new_registration_path(resource_name), class: 'btn btn-outline-secondary' %>
     <% end %>
   </span>
+  </div>
 </nav>
