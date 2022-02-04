@@ -1,24 +1,15 @@
-# README
+**Приложение для создания и прохождения тестов с возможностью выгрузки в Gist.**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby 2.7.1 | Rails 6.1.4
 
-Things you may want to cover:
+**Модели**: [Тесты](https://github.com/MR-AII/test_guru/blob/master/app/models/test.rb) |
+        [Вопросы](https://github.com/MR-AII/test_guru/blob/master/app/models/question.rb) |
+        [Ответы](https://github.com/MR-AII/test_guru/blob/master/app/models/answer.rb) |
+        [Пользователи](https://github.com/MR-AII/test_guru/blob/master/app/models/user.rb) |
 
-* Ruby version
 
-* System dependencies
+**Клонирование проекта:** `https://github.com/MR-AII/test_guru.git`
 
-* Configuration
+**Миграции:** `rails db:migrate`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**Комманда для запуска Rails:** `rails s`
